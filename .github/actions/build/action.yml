@@ -2,5 +2,4 @@ name: "Build inside docker"
 description: 'Install deps and build latex file'
 runs:
   using: 'docker'
-  image: '../../../Dockerfile'
-  options: --mount "type=bind,source=/home/runner/work/AutoCV/AutoCV/source,target=/src/source"
+  image: '../../../Dockerfile
