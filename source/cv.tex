@@ -1,0 +1,84 @@
+\documentclass{resume}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=cyan
+}
+
+\name{Georgii Ustinov}
+\contact{\href{tel:+7 912 207-83-58}{+7 912 207-83-58}}
+\contact{\href{mailto:ustinovgo@gmail.com}{ustinovgo@gmail.com}}
+\contact{\href{https://github.com/Hardes1}{github/Hardes1}}
+\contact{\href{https://www.linkedin.com/in/george-ustinov-123475242/}{linkedin/george-ustinov}}
+
+\begin{document}
+\makeheader
+
+\begin{ResumeSection}{education}
+    \begin{ResumeSubsection}{org={Neapolis University Pafos (sponsored by JetBrains)},position={Bachelor of Applied Computer Science}, duration={Oct. 2022 - Jun. 2025 (expected)}} \\
+    \textbf{Relevant courses}: \\
+    \textit{C++ Programming, Algorithms and Data Structures, Calculus, Compilers} \\
+    \end{ResumeSubsection}
+    \begin{ResumeSubsection}{org={Higher School of Economics},position={Bachelor of Software Engineering}, duration={Sep. 2021 - Jan. 2023}} \\
+    \textbf{Relevant courses}: \\
+    \textit{C++/C\# Programming, Algorithms and Data Structures, (Linear) Algebra, Discrete Mathematics, Calculus, Databases, Computer Architecture, Software Design, Probability Theory}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{skills}
+    \newcommand{\skill}[2]{\textbf{#1} - #2}
+        \begin{itemize}
+            \item \skill{Programming languages}{Kotlin, Java, C++, C\#, Python}
+            \item \skill{Android}{SDK, Coroutines, RxJava2, MVVM, MVP, Dagger2, Room, Retrofit2, Material Design, Glide, KMM}
+            \item \skill{Tools}{Git, Gradle, Bash, Figma}
+            \item \skill{Languages}{Russian (Native), English (Professional working proficiency)}
+        \end{itemize}
+\end{ResumeSection}
+
+\begin{ResumeSection}{experience}
+    \begin{ResumeSubsection}{org=Yandex (Disk),location={Moscow, Russia},position={Android Engineer (Intern)},duration=Jul. 2022 - Oct. 2022} 
+        \begin{itemize}
+            \item Improved the feature of cleaning up space on the phone for photos uploaded to the cloud
+            \item Provided cancelability of some application processes
+            \item Refactored unit tests, autotests and the code
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{projects}
+\begin{ResumeSubsection}{org=Tinkoff graduation project,position={Kotlin, RxJava2, Retrofit, MVI, Material Design, Navigation Component},duration={Jun. 2022}} \\
+Custom mobile client of zulip work messenger \vspace{4}
+\begin{itemize}
+\end{itemize}
+\end{ResumeSubsection}
+\begin{ResumeSubsection}{org=Soiree,position={Kotlin, Coroutines, Retrofit, MVVM, Navigation Сomponent},duration={Feb. 2022}} \\
+Application for improving the efficiency of employees with elements of gamification \vspace{4}
+\begin{itemize}
+\end{itemize}
+\end{ResumeSubsection}
+\begin{ResumeSubsection}{org=ReceiptsPro,position={Java, MVP, Android charts, Navigation Component},duration={Jun. 2020 \\}} 
+Smart assistant for analyzing expenses by scanning QR codes on receipts
+\begin{itemize}
+\end{itemize}
+\end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{additional education}
+    \newcommand{\school}[2]{\textbf{#1} - #2}
+    \begin{itemize}
+        \item \school{JetBrains Academy}{Kotlin Developer} \em\hfill{Oct. 2022 - Jan. 2023}\em
+        \item \school{Tinkoff Fintech School}{Android Kotlin junior course}  \em\hfill{Mar. 2022 - May 2022}\em
+        \item \school{Tinkoff Generation}{Algorithms and data structures} \em\hfill{2020 - 2021}\em
+        \item \school{Samsung IT school}{Android Java course} \em\hfill{2020}\em
+    \end{itemize}
+\end{ResumeSection}
+\begin{ResumeSection}{Achievements}
+\begin{itemize}
+  \item All-Russian Olympiad in Informatics, top 1\% of over 50000 participants \em\hfill{2021}\em
+  \item All-Siberian Open Olympiad for schoolchildren, prize winner \em\hfill{2021}\em
+  \item All-Russian Team Olympiad in Programming, prize winners \em\hfill{2021}\em
+\end{itemize}
+\end{ResumeSection}
+\end{document}
