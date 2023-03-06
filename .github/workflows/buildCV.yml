@@ -1,8 +1,17 @@
 name: Building CV
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
     Building:
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v3
-        - run: echo "Hello world!"
+        - name: Cloning repo
+          uses: actions/checkout@v3
+        - name: Show folder files
+          run: ls
+        - name: Building latex in Docker
+          uses: ./github/actions/build
+      
+        
