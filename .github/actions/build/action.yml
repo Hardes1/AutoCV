@@ -3,5 +3,4 @@ description: 'Install deps and build latex file'
 runs:
   using: 'docker'
   image: '../../../Dockerfile'
-  args:
-    --mount type=bind,source=/home/runner/work/AutoCV/AutoCV/source,target=/src/source
+  options: --mount "type=bind,source=/home/runner/work/AutoCV/AutoCV/source,target=/src/source"
