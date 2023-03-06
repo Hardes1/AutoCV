@@ -11,6 +11,8 @@ jobs:
           uses: actions/checkout@v3
         - name: Show folder files
           run: ls
+        - name: Show current path
+          run: pwd
         - name: Building latex in Docker
           uses: ./.github/actions/build
       
