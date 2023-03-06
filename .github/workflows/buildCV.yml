@@ -12,6 +12,6 @@ jobs:
         - name: Show folder files
           run: ls
         - name: Building latex in Docker
-          uses: ./github/actions/build
+          uses: ./.github/actions/build
       
         
