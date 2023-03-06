@@ -4,4 +4,4 @@ runs:
   using: 'docker'
   image: '../../../Dockerfile'
   args:
-    - --mount type=bind,source=/home/runner/work/AutoCV/AutoCV/source,target=/src/source
+    --mount type=bind,source=/home/runner/work/AutoCV/AutoCV/source,target=/src/source
