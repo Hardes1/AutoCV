@@ -15,5 +15,7 @@ jobs:
           run: pwd
         - name: Building latex in Docker
           uses: ./.github/actions/build
+          with:
+            options: --mount "type=bind,source=/home/runner/work/AutoCV/AutoCV/source,target=/src/source"
       
         
