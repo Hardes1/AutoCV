@@ -2,4 +2,4 @@ name: "Build inside docker"
 description: 'Install deps and build latex file'
 runs:
   using: 'docker'
-  image: '../../../Dockerfile
+  image: '../../../Dockerfile'
