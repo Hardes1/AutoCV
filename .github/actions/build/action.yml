@@ -3,5 +3,7 @@ description: 'Install deps and build latex file'
 runs:
   using: 'docker'
   image: '../../../Dockerfile'
+  volume:
+  
   args:
-    - --mount "type=bind,source=$(pwd),target=/src/source"
+    - --mount type=bind,source=./source,target=/src/source
