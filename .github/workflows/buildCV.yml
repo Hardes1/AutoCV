@@ -16,11 +16,11 @@ jobs:
           with:
             fetch-depth: 0
         - name: Show folder files
-          run: ls
+          run: find . -maxdepth 2 ! -path "./.git/*"
         - name: Building latex in Docker
           uses: ./.github/actions/build
         - name: Browse files
-          run: ls source
+          run: find . -maxdepth 2 ! -path "./.git/*"
         - name: Config bot to push result pdf
           env: 
             CI_COMMIT_MESSAGE: Push pdf
