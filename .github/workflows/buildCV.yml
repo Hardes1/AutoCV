@@ -6,12 +6,15 @@ on:
     paths:
       - 'source/*'
       - 'Dockerfile'
+      - '.github/**'
 jobs:
     Building:
       runs-on: ubuntu-latest
       steps:
         - name: Cloning repo
           uses: actions/checkout@v3
+          with:
+            fetch-depth: 0
         - name: Show folder files
           run: ls
         - name: Building latex in Docker
