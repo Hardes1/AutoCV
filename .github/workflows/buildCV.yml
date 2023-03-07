@@ -30,7 +30,9 @@ jobs:
            git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
            git config --global user.email "username@users.noreply.github.com"
            git add source/cv.pdf
+           git stash
            git checkout "${{ env.BRANCH_NAME }}"
+           git stash pop
            git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
            git push
           
