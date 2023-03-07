@@ -34,7 +34,7 @@ jobs:
            git checkout "${{ env.BRANCH_NAME }}"
            rm source/cv.pdf 2>/dev/null
            git add source/cv.pdf
-           git commit --amend -m "${{ env.CI_COMMIT_MESSAGE }}"
+           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
            git stash pop
            git commit --amend -m "${{ env.CI_COMMIT_MESSAGE }}"
            git push
