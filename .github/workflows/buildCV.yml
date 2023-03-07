@@ -32,7 +32,7 @@ jobs:
            git add source/cv.pdf
            git stash
            git checkout "${{ env.BRANCH_NAME }}"
-           git stash pop
+           git stash show -p | git apply && git stash drop
            git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
            git push
           
