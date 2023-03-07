@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-WORKDIR src
+WORKDIR dev
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Moscow
 RUN apt-get update
