@@ -29,7 +29,7 @@ jobs:
           run: |
            git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
            git config --global user.email "username@users.noreply.github.com"
-           git add source/cv.pdf
+           git add -f source/cv.pdf
            git stash
            git checkout "${{ env.BRANCH_NAME }}"
            rm source/cv.pdf 2>/dev/null
