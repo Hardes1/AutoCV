@@ -1,10 +1,11 @@
 \documentclass{resume}
+\usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{lipsum}
 
 \hypersetup{
   colorlinks=true,
-  urlcolor=cyan
+  urlcolor=blue!50!black
 }
 
 \name{Georgii Ustinov}
@@ -27,7 +28,7 @@
     \end{ResumeSubsection}
 	\begin{ResumeSubsection}{org=Yandex Disk,location={Moscow, Russia},position={Android Engineer (Internship)},duration=Jul. 2022 - Oct. 2022} 
         \begin{itemize}
-            \item Improved storage cleanup for photos backed up to the cloud in the Yandex Disk Android app.
+            \item Improved the storage cleanup workflow, helping users free device space by removing local copies of photos backed up to the cloud.
             \item Enabled cancellation of long-running file synchronization operations using Kotlin coroutines.
         \end{itemize}
     \end{ResumeSubsection}
@@ -36,11 +37,11 @@
 \begin{ResumeSection}{skills}
     \newcommand{\skill}[2]{\textbf{#1} - #2}
         \begin{itemize}
+			\item \skill{Programming Languages}{Java, Kotlin, C++, Go, Python, Rust}
             \item \skill{Frameworks}{IntelliJ Platform, Android, Userver, Gin}
             \item \skill{Tools}{Git, Gradle, Maven, Bazel, Bash, CMake, Docker}
             \item \skill{Protocols}{LSP, gRPC, WebSockets, REST}
             \item \skill{Storage \& Messaging}{PostgreSQL, Redis, Kafka, RabbitMQ}
-            \item \skill{Programming Languages}{Java, Kotlin, C++, Go, Python, Rust}
             \item \skill{Agentic Technologies}{MCP tooling, agent skills, subagent development}
             \item \skill{Languages}{Russian (Native), English (C1), German (A2)}
         \end{itemize}
@@ -74,6 +75,7 @@ Built an Android client for the Zulip team chat platform. \vspace{4pt}
 \begin{ResumeSection}{Achievements}
 \begin{itemize}
   \item Software Engineering Instructor, ACTS: led students building an end-to-end encrypted chat app. \em\hfill{2026}\em
+  \item Optiver Trading Hackathon: 5th place out of 42 teams. \em\hfill{2025}\em
   \item ICPC Southeastern Europe Regional Contest: Honorable Mention. \em\hfill{2022}\em
   \item All-Russian Olympiad in Informatics: top 1\% of over 50,000 participants. \em\hfill{2021}\em
 \end{itemize}
