@@ -3,3 +3,4 @@ source/*
 !source/cv.tex
 !source/resume.cls
 !source/Makefile
+AGENTS.md
